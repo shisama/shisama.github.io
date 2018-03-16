@@ -1,4 +1,6 @@
 {
+  "name": "shisama.github.io",
+  "short_name": "shisama",
   "start_url": "/",
   "icons": [{
     "src": "img/avatar.png",
