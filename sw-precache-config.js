@@ -2,6 +2,7 @@ module.exports = {
   staticFileGlobs: [
     '**.html',
     '**.js',
+    '**.json',
     'js/**.js',
     'img/**.*',
     'https://cdn.ampproject.org/v0.js',
