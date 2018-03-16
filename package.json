@@ -1,0 +1,23 @@
+{
+  "name": "shisama.github.io",
+  "version": "1.0.0",
+  "description": "Masashi Hirano (@shisama)'s page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sw-precache --config=sw-precache-config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shisama/shisama.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shisama/shisama.github.io/issues"
+  },
+  "homepage": "https://github.com/shisama/shisama.github.io#readme",
+  "devDependencies": {
+    "sw-precache": "^5.2.1"
+  }
+}
