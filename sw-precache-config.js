@@ -9,7 +9,10 @@ module.exports = {
     'https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js'
   ],
   runtimeCaching: [{
-    urlPattern: /this\\.is\\.a\\.regex/,
+    urlPattern: '*',
     handler: 'networkFirst'
+  },{
+    urlPattern: /cdn\.ampproject\.org/,
+    handler: 'fastest'
   }]
 };
