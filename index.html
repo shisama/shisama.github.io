@@ -41,7 +41,8 @@
         min-height: 100%;
         overflow: hidden;
       }
-
+      main {
+      }
       @-webkit-keyframes move {
         100% {
           -webkit-transform: translate3d(0, 0, -1000px);
@@ -55,15 +56,11 @@
           transform: translate3d(0, 0, -1000px);
         }
       }
-      .container {
-        position: relative;
+      .bubble-wrap {
         width: 100%;
         min-height: 100%;
         -webkit-transform-style: preserve-3d;
         transform-style: preserve-3d;
-      }
-
-      .bubble-wrap {
         margin: 0 auto;
         width: 500px;
         height: 500px;
@@ -73,6 +70,11 @@
         transform-origin: center center;
         -webkit-perspective: 600px;
         perspective: 600px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
       }
 
       .bubble {
@@ -1093,49 +1095,49 @@
   </head>
   <body>
   <h1>Welcome! This is shisama's page</h1>
-  <amp-img class="avatar" src="./img/avatar.png" alt="shisama" height="200" width="200"></amp-img>
-  <ul class="link-list">
-    <li><a href="https://github.com/shisama"><amp-img class="link-img" src="./img/github.svg" alt="GitHub" layout="responsive" height="100" width="100"/></a></li>
-    <li><a href="https://twitter.com/shisama_"><amp-img class="link-img" src="./img/twitter.svg" alt="Twitter" layout="responsive" height="100" width="100"/></a></li>
-    <li><a href="https://www.facebook.com/masashi07"><amp-img class="link-img" src="./img/facebook.svg" alt="Facebook" layout="responsive" height="100" width="100"/></a></li>
-    <li><a href="https://qiita.com/shisama"><amp-img class="link-img" src="./img/qiita.svg" alt="Qiita" layout="responsive" height="100" width="100" /></a></li>
-    <li><a href="https://www.npmjs.com/~shisama"><amp-img class="link-img" src="./img/npm.png" alt="npmjs" layout="responsive" height="100" width="100" /></a></li>
-    <li><a href="https://dev.to/shisama"><amp-img class="link-img" src="./img/devto.png" alt="npmjs" layout="responsive" height="100" width="100" /></a></li>
-  </ul>
-  <div class="container">
-    <div class="bubble-wrap">
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-    </div>
+  <div class="bubble-wrap">
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
   </div>
+  <main>
+    <amp-img class="avatar" src="./img/avatar.png" alt="shisama" height="200" width="200"></amp-img>
+    <ul class="link-list">
+      <li><a href="https://github.com/shisama"><amp-img class="link-img" src="./img/github.svg" alt="GitHub" layout="responsive" height="100" width="100"/></a></li>
+      <li><a href="https://twitter.com/shisama_"><amp-img class="link-img" src="./img/twitter.svg" alt="Twitter" layout="responsive" height="100" width="100"/></a></li>
+      <li><a href="https://www.facebook.com/masashi07"><amp-img class="link-img" src="./img/facebook.svg" alt="Facebook" layout="responsive" height="100" width="100"/></a></li>
+      <li><a href="https://qiita.com/shisama"><amp-img class="link-img" src="./img/qiita.svg" alt="Qiita" layout="responsive" height="100" width="100" /></a></li>
+      <li><a href="https://www.npmjs.com/~shisama"><amp-img class="link-img" src="./img/npm.png" alt="npmjs" layout="responsive" height="100" width="100" /></a></li>
+      <li><a href="https://dev.to/shisama"><amp-img class="link-img" src="./img/devto.png" alt="npmjs" layout="responsive" height="100" width="100" /></a></li>
+    </ul>
+  </main>
   <amp-install-serviceworker
       src="./service-worker.js"
       layout="nodisplay">
