@@ -1,5 +1,7 @@
+include pug/mixins/link_list
+
 doctype html
-html(⚡="" lang="en")
+html(⚡ lang="en")
     head
         meta(charset="utf-8")
         title shisama.github.io
@@ -14,8 +16,8 @@ html(⚡="" lang="en")
         noscript
             style(amp-boilerplate).
                 body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
-        script(async="" src="https://cdn.ampproject.org/v0.js")
-        script(async="" custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js")
+        script(async src="https://cdn.ampproject.org/v0.js")
+        script(async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js")
     body
         h1 Welcome! This is shisama's page
         .bubble-wrap
@@ -24,25 +26,11 @@ html(⚡="" lang="en")
         main
             amp-img.avatar(src="./img/avatar.png" alt="shisama" height="200" width="200")
             ul.link-list
-                li
-                    a(href="https://github.com/shisama")
-                        amp-img.link-img(src="./img/github.svg" alt="GitHub" layout="responsive" height="100" width="100" title="GitHub")
-                li
-                    a(href="https://twitter.com/shisama_")
-                        amp-img.link-img(src="./img/twitter.svg" alt="Twitter" layout="responsive" height="100" width="100" title="Twitter")
-                li
-                    a(href="https://www.facebook.com/masashi07")
-                        amp-img.link-img(src="./img/facebook.svg" alt="Facebook" layout="responsive" height="100" width="100" title="Facebook")
-                li
-                    a(href="https://qiita.com/shisama")
-                        amp-img.link-img(src="./img/qiita.svg" alt="Qiita" layout="responsive" height="100" width="100" title="Qiita")
-                li
-                    a(href="https://www.npmjs.com/~shisama")
-                        amp-img.link-img(src="./img/npm.png" alt="npmjs" layout="responsive" height="100" width="100" title="npm")
-                li
-                    a(href="https://dev.to/shisama")
-                        amp-img.link-img(src="./img/devto.png" alt="dev.to" layout="responsive" height="100" width="100" title="dev.to")
-                li
-                    a(href="https://codepen.io/shisama/")
-                        amp-img.link-img(src="./img/codepen.svg" alt="codepen" layout="responsive" height="100" width="100" title="codepen")
+                +link_list("Github", "https://github.com/shisama", "./img/github.svg")
+                +link_list("Twitter", "https://twitter.com/shisama_", "./img/twitter.svg")
+                +link_list("Facebook", "https://www.facebook.com/masashi07", "./img/facebook.svg")
+                +link_list("Qiita", "https://qiita.com/shisama", "./img/qiita.svg")
+                +link_list("npm", "https://www.npmjs.com/~shisama", "./img/npm.png")
+                +link_list("dev.to", "https://dev.to/shisama", "./img/devto.png")
+                +link_list("codepen", "https://codepen.io/shisama/", "./img/codepen.svg")
         amp-install-serviceworker(src="./service-worker.js" layout="nodisplay")
