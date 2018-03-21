@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-html": "gulp html",
-    "build-sw": "sw-precache --config=sw-precache-config.js"
+    "build-sw": "sw-precache --config=sw-precache-config.js",
+    "retire": "gulp retire",
+    "build": "npm run retire && npm run build-html && npm run build-sw"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,8 @@
     "gulp": "^3.9.1",
     "gulp-inline-source": "^3.1.0",
     "gulp-pug": "^3.3.0",
+    "gulp-util": "^3.0.8",
+    "retire": "^1.6.0",
     "sw-precache": "^5.2.1"
   }
 }
