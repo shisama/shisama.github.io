@@ -96,28 +96,12 @@ self.__precacheManifest = [
     "revision": "ba62be6616e25e9e38ee393813aed5e2"
   },
   {
-    "url": "manifest.json",
-    "revision": "7a1e6f66dda4b24874af0e773d092550"
-  },
-  {
-    "url": "package-lock.json",
-    "revision": "e42fab9b9ccb7d6422ccdd5e4aa48c3a"
-  },
-  {
-    "url": "package.json",
-    "revision": "675cc8f58f53f6125bd4c29d504b1008"
-  },
-  {
     "url": "src/css/style.css",
     "revision": "c7528176c230c88d44faf8d83b60226b"
   },
   {
-    "url": "src/index.pug",
-    "revision": "7b99e2180e7ec8098ac70c77e9f04f27"
-  },
-  {
-    "url": "src/pug/mixins/link_list.pug",
-    "revision": "4bfb16c3890b71fafe4a09e7956e260f"
+    "url": "manifest.json",
+    "revision": "7a1e6f66dda4b24874af0e773d092550"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
