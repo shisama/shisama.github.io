@@ -5,7 +5,9 @@ module.exports = {
     "manifest.json"
   ],
   "globIgnores": [
-    "*.js",
+    "gulpfile.js",
+    "workbox-config.js",
+    "src/**/**.*",
     "**/node_modules/**/**.*"
   ],
   "swDest": "sw.js",

@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-html": "gulp html",
-    "build-sw": "workbox generateSW workbox-config.js",
+    "build-sw": "workbox generateSW workbox-config.js && uglifyjs sw.js -o sw.js",
     "retire": "gulp retire",
     "build": "npm run retire && npm run build-html && npm run build-sw"
   },
@@ -27,6 +27,7 @@
     "gulp-util": "^3.0.8",
     "retire": "^1.6.0",
     "sw-precache": "^5.2.1",
+    "uglify-js": "^3.3.16",
     "workbox-cli": "^3.0.1"
   }
 }
