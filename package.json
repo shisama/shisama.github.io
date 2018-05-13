@@ -27,7 +27,7 @@
     "gulp-util": "^3.0.8",
     "retire": "^1.6.0",
     "sw-precache": "^5.2.1",
-    "uglify-js": "^3.3.16",
-    "workbox-cli": "^3.0.1"
+    "uglify-js": "^3.3.25",
+    "workbox-cli": "^3.2.0"
   }
 }
