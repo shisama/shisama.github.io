@@ -8,7 +8,8 @@
     "build-html": "gulp html",
     "build-sw": "workbox generateSW workbox-config.js && uglifyjs sw.js -o sw.js",
     "retire": "gulp retire",
-    "build": "npm run retire && npm run build-html && npm run build-sw"
+    "build": "npm run retire && npm run build-html && npm run build-sw",
+    "serve": "http-server ."
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
     "gulp-inline-source": "^3.1.0",
     "gulp-pug": "^3.3.0",
     "gulp-util": "^3.0.8",
+    "http-server": "^0.11.1",
     "retire": "^1.6.0",
     "sw-precache": "^5.2.1",
     "uglify-js": "^3.3.25",
