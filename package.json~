@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:html": "gulp html",
-    "build:sw": "workbox generateSW workbox-config.js",
+    "build:sw": "workbox generateSW workbox-config.js && uglifyjs sw.js -o sw.js",
     "build": "run-p build:*",
     "serve": "http-server ."
   },
