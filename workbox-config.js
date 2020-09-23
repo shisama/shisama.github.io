@@ -13,7 +13,7 @@ module.exports = {
   "swDest": "sw.js",
   "runtimeCaching": [{
     urlPattern: new RegExp('^https://cdn.ampproject.org'),
-    handler: 'staleWhileRevalidate',
+    handler: "CacheFirst",
     options: {
       cacheableResponse: {
         statuses: [0, 200]
