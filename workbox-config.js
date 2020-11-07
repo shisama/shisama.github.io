@@ -4,7 +4,7 @@ module.exports = {
   "globDirectory": "./docs",
   "globPatterns": [
     "**/*.{ico,png,svg,html,css,js}",
-    "manifest.json"
+    "*.webmanifest"
   ],
   "globIgnores": [
     "gulpfile.js",
