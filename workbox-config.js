@@ -1,5 +1,7 @@
+const path = require("path");
+
 module.exports = {
-  "globDirectory": ".",
+  "globDirectory": "./docs",
   "globPatterns": [
     "**/*.{ico,png,svg,html,css,js}",
     "manifest.json"
@@ -10,7 +12,7 @@ module.exports = {
     "src/**/**.*",
     "**/node_modules/**/**.*"
   ],
-  "swDest": "sw.js",
+  "swDest": path.resolve(__dirname, "docs", "sw.js"),
   "runtimeCaching": [{
     urlPattern: new RegExp('^https://cdn.ampproject.org'),
     handler: "CacheFirst",

@@ -8,7 +8,7 @@
     "build:html": "gulp html",
     "build:sw": "workbox generateSW workbox-config.js",
     "build": "run-p build:*",
-    "serve": "http-server ."
+    "serve": "http-server docs"
   },
   "repository": {
     "type": "git",
