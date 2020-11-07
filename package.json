@@ -8,7 +8,8 @@
     "build:html": "gulp html",
     "build:sw": "workbox generateSW workbox-config.js",
     "build": "run-p build:*",
-    "serve": "http-server docs"
+    "serve": "http-server docs",
+    "clean": "rimraf docs/*.{js,html,map}"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,7 @@
     "gulp-util": "3.0.8",
     "http-server": "0.12.3",
     "npm-run-all": "4.1.5",
+    "rimraf": "^3.0.2",
     "sw-precache": "5.2.1",
     "uglify-js": "3.11.5",
     "workbox-cli": "5.1.4"
