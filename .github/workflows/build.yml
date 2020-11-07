@@ -20,6 +20,8 @@ jobs:
             CHANGED=$(git diff-index --name-only HEAD --)
             echo "CHANGED=${CHANGED}."
             if [ ! -z "$CHANGED" ]; then
+              git config --global user.email "shisama07@gmail.com"
+              git config --global user.name "shisama"
               git commit -am "docs"
               git push origin gh-pages
             fi
