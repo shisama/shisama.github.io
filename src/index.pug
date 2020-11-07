@@ -19,10 +19,7 @@ html(⚡ lang="en")
         script(async src="https://cdn.ampproject.org/v0.js")
         script(async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js")
     body
-        h1 Masashi Hirano
-        .bubble-wrap
-            - for (i = 0; i < 30; i++)
-              div.bubble
+        h1.name.glitch(data-text="Masashi Hirano") Masashi Hirano
         main
             amp-img.avatar(src="./img/avatar.png" alt="shisama" height="200" width="200")
             ul.link-list
