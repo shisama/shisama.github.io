@@ -14,8 +14,10 @@ jobs:
         node-version: 12.x
     - name: build
       run: |
-            yarn
-            yarn build
+        yarn install
+        yarn build
+      env:
+        CI: true
      - name: deploy
        uses: peaceiris/actions-gh-pages@v2.5.0
        env:
