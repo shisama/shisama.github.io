@@ -19,6 +19,7 @@ amp-img {
   display: block;
   font-size: 20px;
   list-style-type: none;
+  padding-inline-start: unset;
 }
 .link-list li {
   display: inline-block;
