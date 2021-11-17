@@ -5,3 +5,11 @@ node_modules
 docs/*.html
 docs/*.js
 docs/*.map
+
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
