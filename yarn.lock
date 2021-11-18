@@ -5808,7 +5808,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"npm-run-all@npm:^4.1.5":
+"npm-run-all@npm:4.1.5":
   version: 4.1.5
   resolution: "npm-run-all@npm:4.1.5"
   dependencies:
@@ -6364,7 +6364,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.1.2":
+"prettier@npm:2.1.2":
   version: 2.1.2
   resolution: "prettier@npm:2.1.2"
   bin:
@@ -7061,7 +7061,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rimraf@npm:^3.0.2":
+"rimraf@npm:3.0.2, rimraf@npm:^3.0.2":
   version: 3.0.2
   resolution: "rimraf@npm:3.0.2"
   dependencies:
@@ -7305,9 +7305,9 @@ __metadata:
     gulp-pug: 4.0.1
     gulp-util: 3.0.8
     http-server: 0.12.3
-    npm-run-all: ^4.1.5
-    prettier: ^2.1.2
-    rimraf: ^3.0.2
+    npm-run-all: 4.1.5
+    prettier: 2.1.2
+    rimraf: 3.0.2
     sw-precache: 5.2.1
     uglify-js: 3.11.5
     workbox-cli: 5.1.4
