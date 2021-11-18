@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "run-p build:*",
     "build:html": "gulp html",
     "build:sw": "workbox generateSW workbox-config.js",
-    "build": "run-p build:*",
     "serve": "http-server docs",
     "clean": "rimraf docs/*.{js,html,map}",
     "format": "prettier . --write"
@@ -28,7 +28,7 @@
     "gulp-pug": "4.0.1",
     "gulp-util": "3.0.8",
     "http-server": "0.12.3",
-    "npm-run-all": "4.1.5",
+    "npm-run-all": "^4.1.5",
     "prettier": "^2.1.2",
     "rimraf": "^3.0.2",
     "sw-precache": "5.2.1",
