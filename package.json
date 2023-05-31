@@ -33,6 +33,6 @@
     "rimraf": "^3.0.2",
     "sw-precache": "5.2.1",
     "uglify-js": "3.11.5",
-    "workbox-cli": "5.1.4"
+    "workbox-cli": "7.0.0"
   }
 }
